@@ -55,7 +55,7 @@ class contactService {
             favorite: payload.favorite,
         };
         // remove undfined fields
-        objects.keys(contact).forEach(
+        Object.keys(contact).forEach(
             (key) => contact[key] === undefined && delete contact[key]
         );
         return contact;
